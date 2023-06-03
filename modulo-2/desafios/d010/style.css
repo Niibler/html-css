@@ -1,0 +1,156 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: customFonts;
+    src: url('pacote-projeto/fontes/idroid.otf');
+}
+
+/*
+PROBLEMAS PARA RESOLVER NO SITE:
+    Responsividade: O Site não vai ficando centralizado conforme o tamanho da tela vai diminuindo. 
+    Imagens: Configurar o tamanho máximo da tela para trocar para uma imagem menor. (ok, só falta testar)
+    Código: Tentar criar um código menor e mais limpo, se possível. 
+
+*/
+
+* {
+    margin: 0px
+}
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: justify;
+}
+
+/*HEADER CONFIGS*/
+header {
+    background-image: linear-gradient(to bottom, #2EA564, #063D1E);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.493);
+}
+
+.cabecalho > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5em;
+}
+
+nav.menu  {
+    text-align: start;
+    margin-bottom: -20px;
+}
+
+.menu > a {
+    color: #4eb47c;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.menu > a:hover {
+    color: rgba(255, 255, 255, 0.829); 
+    background-color: #2da062;
+    border-radius: 5px;
+}
+
+/*MAIN CONFIGS*/
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 250px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.473);
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.article-links {
+    background-color: #83E1AD;
+    color: #103a22; 
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.article-links:hover {
+    text-decoration: underline;
+    color: #1a5c36;
+}
+
+.article-links::after {
+    content: "🔗";
+}
+.article-topic {
+    font-family: customFonts, Arial, Helvetica, sans-serif;
+    color: #185935;
+    font-size: 1.3em;
+    padding: 4px;
+}
+
+h3.article-topic {
+    font-size: 1.6em;
+}
+
+h4.article-topic {
+    background-image: linear-gradient(to right, #83E1AD, white);
+}
+
+.image > img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video {
+    background-color: #1A5C38;
+    height: 500px;
+    margin: -10px;
+    padding: 20px 0px;
+}
+
+.video > iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*ASIDE SETTINGS*/
+.extra > h4 {
+    background-color: #2FA866;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -58px -8px 0px -8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.493);
+}
+
+.extra {
+    background-color: #C5EBD6;
+    padding: 8px;  
+    margin-top: 0px;
+    border-radius: 0px 0px 10px 10px; 
+    margin: 74px 4px 4px 4px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.493);
+}
+
+.extra > ul {
+    list-style-type: "\2705";
+    list-style-position: inside;
+    columns: 2; 
+}
+
+.candy-names > li > abbr {  
+    text-decoration: underline;
+    
+}
+/*FOOTER CONFIGS*/
+footer {
+    background-color: #1A5C38;
+    text-align: center;
+    padding: 7px;
+    margin-top: 10px;
+}

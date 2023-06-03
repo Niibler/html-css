@@ -1,0 +1,218 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: Android;
+    src: url('../../pacote-projeto/fontes/idroid.otf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #9addbb;
+    --cor1: #72DBA5;
+    --cor2: #2FD37D;
+    --cor3: #23A160;
+    --cor4: #2C543F;
+    --cor5: #135432;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --font-destaque: 'Bebas Neue', sans-serif;
+    --font-android: Android, cursive; 
+}
+
+body {
+    background-color: #7FD7A6;
+    font-family: var(--font-padrao);
+}
+
+
+
+/*HEADER SELECTORS*/
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 5px 3px 5px rgb(0 0 0 / 33%);
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    color: white; 
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+header > p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*MENU SELECTORS*/
+nav {
+    padding: 10px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.288);
+}
+
+nav > a {
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none; 
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    margin-left: 10px;
+}
+
+nav > a:hover {
+    color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+/*MAIN SELECTORS*/
+main {
+    background-color: white;
+    padding: 20px;
+    max-width: 1000px;
+    min-width: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: justify;
+}
+
+main h1, h2 {
+    font-family: var(--font-android);
+    text-align: left;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-size: 1.5em;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 15px;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4); 
+    background-color: var(--cor1);
+    padding: 2px 4px;
+}
+
+a.external::after {
+    content: " 🔗";
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 4px; 
+}
+
+main img {
+    width: 100%;
+}
+
+main img.bugdroid-pequeno {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.55%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%; 
+    width: 90%;
+    height: 90%;
+
+}
+/*ASIDE SELECTORS*/
+aside { 
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 10px 1px rgb(0 0 0 / 29%);
+    text-align: justify;
+    
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\2714\00A0\00A0"; /*Essa configuração de emoji não é compatível com todo navegador, somente com Chrome.*/
+
+}
+/*FOOTER SELECTORS*/
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}

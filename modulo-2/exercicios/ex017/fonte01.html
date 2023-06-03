@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, Verdana, sans-serif; 
+            font-size: 1.5em ;
+             
+            /* 
+            Tamanho de fontes e suas medidas {
+                Medidas absolutas: cm, mm, in (polegada, inches), px, pt, pc 
+
+                Medidas relativas: em, ex, rem, vw, vh, %
+                
+                16px (tamanho padrão de fontes na web) = 1em
+
+            }
+            */
+            /*
+            Weight= Peso
+            Width: Largura
+            Height: Altura
+            */      
+        }
+
+        h1, h2 {
+            /* 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 2em;
+             Utiliza-se muito a configuração acima, por isso, existe um shorthand para condensar o codigo em menos linhas
+                OBS: para utilizar esse shorthand, existe uma sequência de parâmetros a ser preenchido, que é: 
+                - font style > font-weight > font-size > font-family
+            */
+            font: oblique normal 2em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            /*ANOTAÇÕES: 
+            
+            Referente a font-family {
+                É bom sempre procurar combinações de safe fonts para usar, como essa que foi usada, basta usar ctrl + space queele irá recomendar as safe combinations para de usar. É possível consultar isso em https://www.w3schools.com/cssref/css_websafe_fonts.php
+            }
+            
+            
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam dignissimos ut optio cumque, quisquam saepe voluptatem ad vero fugiat earum doloribus doloremque excepturi aperiam non, accusamus praesentium beatae quis.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa similique odit exercitationem neque corrupti incidunt in illo non soluta nisi inventore cum facilis, ea ratione voluptatum dolore ex iure sapiente!</p>  
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, pariatur?</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aliquid magni. Quod doloremque quia dolores soluta vitae odit nihil animi, nulla dolor! Totam eum esse architecto laboriosam vero quidem atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic iusto reprehenderit, blanditiis pariatur soluta autem atque delectus tempora officia et quo magnam, quia eaque, in numquam recusandae? Dolor, accusamus cumque.</p>
+    <p>Deseja voltar? <a  rel="prev" href="../../../index.html">Clique aqui</a>.</p>
+</body>
+</html>

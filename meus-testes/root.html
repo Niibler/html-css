@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe Root</title>
+    <style>
+        :root { 
+            --font-padrao: Arial, Helvetica, sans-serif; 
+            --font-destaque: Verdana;
+            
+            --cor01: #59a546;
+            --cor02: #cc3db4;
+            --cor03: #c02424;
+        }
+
+        body {
+            background-color: var(--cor03);
+        }
+        h1 {
+            font-family: var(--font-destaque);
+            color: var(--cor02)
+        }
+
+        p {
+            font-family: var(--font-padrao);
+            color: var(--cor01);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando a pseudo-classe :root</h1>
+    <p>O teste aqui é para determinar seu escopo de funcionamento, e entender do que se trata o conceito de "raiz do documento".</p>
+</body>
+</html>
