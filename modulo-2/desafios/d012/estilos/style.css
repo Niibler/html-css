@@ -63,6 +63,7 @@ pre {
 .parallax {
     background: white center center /cover no-repeat fixed;
     padding: 10px;
+    box-shadow: inset 0px 0px 9px 3px rgb(0 0 0 / 40%);
 }
 
 .parallax > pre > p {

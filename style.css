@@ -24,10 +24,11 @@ body {
 
 /*HEADER CONFIGS*/
 header {
-    background-image: linear-gradient(var(--cor01), var(--cor03));
+    background: white url('image/kurisu-makise-2400-x-1348-wallpaper-x6vx7tzqjwxu9hu8.jpg') center /cover no-repeat fixed;
     text-align: center;
     margin: auto;
 }
+
 
 .text-shadow {
     text-shadow: 2px 0px 10px rgb(0 0 0 / 35%);
@@ -80,12 +81,12 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-main a {
+a {
     text-decoration: none;
     color: rgb(51, 51, 252);
 }
 
-main a:hover {
+a:hover {
     color: #9c321a;
 }
 
@@ -113,6 +114,17 @@ section h2 {
 footer {
     background-color: var(--cor05);
     color: white;
-    text-align: center;
     margin: auto;
+    padding: 10px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer > pre {
+    white-space: pre-line;
+    font-family: var(--fonte-padrao);
+    line-height: 1.6em;
+    text-align: left;
 }
