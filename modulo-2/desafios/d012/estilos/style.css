@@ -5,12 +5,16 @@
 Coisas a se fazer: 
     -> Criar textos com tamanho adaptáveis a diferentes dispositivos; 
     -> Sombras no efeito parallax para criar um certo efeito (opcional); 
-    --> 
+    
+    -> Checar o uso do text-transform e do font-variant
 */
-
 * {
     margin: 0px;
     padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; 
 }
 
 :root {
@@ -19,16 +23,13 @@ Coisas a se fazer:
     --font-cordel: 'Sriracha', cursive;
 }
 
-body {
-    margin: auto;
-}
 header {
     background-color: black;
     color: white;
     text-align: center;
     font-family: var(--font-destaque);
-    padding: 50px;
     min-width: 150px;
+    padding: 50px;
 }
 
 header > h1 {
@@ -36,7 +37,7 @@ header > h1 {
 }
 
 header > p {
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
 header > p > a { 
@@ -50,9 +51,9 @@ header > p > a:hover {
 
 main {
     font-weight: italic;
-    font-size: 1.7em;
     line-height: 1.6em;
     padding: 10px;
+    font-size: 1.6em;
 }
 
 pre {
@@ -60,16 +61,24 @@ pre {
     font-family: var(--font-cordel);
 }
 
+section { 
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 30px;
+}
+
 .parallax {
     background: white center center /cover no-repeat fixed;
     padding: 10px;
-    box-shadow: inset 0px 0px 9px 3px rgb(0 0 0 / 40%);
+    box-shadow: inset 0px 0px 9px 3px rgb(0 0 0 / 84%);
+    margin: 0px -10px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
 }
 
 .parallax > pre > p {
+    display: inline-block;
     color: white;
     background-color: rgba(0, 0, 0, 0.445);
-    max-width: 350px;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
