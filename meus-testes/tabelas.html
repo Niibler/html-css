@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática com tabelas</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+        
+        td, th {
+            border: 1px solid black;
+            width: 150px;
+        }
+
+        td:nth-child(2) {
+            color: green;
+            text-align: center;
+        }
+
+        td.bad-anime {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Anime</th>
+            <th>Nota</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Steins;Gate</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>Eighty Six</td>
+                <td>10.0</td>
+            </tr>
+            
+            <tr>
+                <td>Kakushigoto</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>Hinamatsuri</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>Ousama Ranking</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>Kaifuku</td>
+                <td class="bad-anime">3.2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th>Total</th>
+            <th>Total2</th>
+            <tr>
+                <td>Teste</td>
+                <td>Teste2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
