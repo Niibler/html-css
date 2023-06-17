@@ -11,11 +11,21 @@
 
         table {
             border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+            border: 1px solid black;
+            border-bottom: none;
+            border-radius: 5px 5px 0px 0px
         }
         
         td, th {
             border: 1px solid black;
-            width: 150px;
         }
 
         thead, tfoot {
@@ -51,9 +61,10 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!--Caption = Legenda. O 'titulo' da tabela-->
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -166,7 +177,8 @@
             </tr>
         </tbody>
         <tfoot>
-            <!--Dá pra colocar coisas aqui, mas não o farei :/-->
+            <th scope="row">Total</th> <!--Scope row porque seu escopo é apenas em uma linha, não em uma coluna inteira-->
+            <td>210.523.520 (ficticio)</td>
         </tfoot>
     </table>
     <p>Fonte: <a rel="external" target="_blank" href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o">Wikipedia</a></p>
