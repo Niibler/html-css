@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .right-table {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+
+    <table class="right-table">
+        <tr>
+            <td rowspan="2">A</td>
+            <td colspan="2">B</td> <!--colspan='2' faz com que a célula B ocupe duas colunas. (alterações na vertical)-->
+        </tr>
+        <tr>
+            <td colspan="2">E</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td rowspan="2">H</td>
+            <td rowspan="2">I</td> <!--rowspan='2' faz com que a célula I ocupe dois espaços em uma linha. (alteraçãos horizontais)-->
+        </tr>
+        <tr>
+            <td>J</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td rowspan="3">D</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td colspan="2">H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>
