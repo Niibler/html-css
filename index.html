@@ -2,77 +2,224 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML&CSS - Aprendendo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+    <style>
+        * {
+            margin: 0px;
+        }   
+        
+        :root {
+            --bg-color: #070516;
+            --cor01: #250933;
+            --cor02: #190933;
+            --cor03: #091A33;
+            --cor04: #090F33; 
+            --cor-destaque: rgb(35, 61, 90);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #070516;
+            color: rgb(223, 223, 223);
+        }
+
+        header {
+            background: linear-gradient(to bottom, #250933, #190933);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header > h1 { 
+            font-size: 3em;
+            padding: 40px;
+        }       
+        
+        nav {
+            padding: 10px;
+        }
+
+        nav > a {
+            margin-left: 10px;
+            color: rgb(194, 194, 194);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav > a:hover {
+            color: var(--cor-destaque);
+            text-decoration: none;
+        }
+
+        a {
+            color: rgb(1, 88, 187);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main h1 {
+            background-color: var(--cor04);
+        }
+
+        #modulo-1 {
+            border: 1px solid white;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #modulo-2 {
+
+        }
+
+        #modulo-3 {
+
+        }
+
+        #modulo-4 {
+
+        }
+
+        #modulo-5 {
+
+        }
+
+        footer {
+
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1 class="text-shadow">CURSO HTML <br>& CSS</h1>
-        <p class="text-shadow">Desbravando novos conteúdo, buscando o aprendizado.</p>
+        <h1>Curso HTML & CSS</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#exercicios">Exercicios</a>
-            <a href="#desafios">Desafios</a>
+            <a href="#modulo-1">Home</a>
+            <a href="">M1</a>
+            <a href="">M2</a>
+            <a href="">M3</a>
+            <a href="">M4</a>
+            <a href="">M5</a>
         </nav>
     </header>
+
     <main>
-        <section id="exercicios">
-            <h2>Exercicios</h2>
-            <ul>
-                <li><a rel="next" href="modulo-1/exercicios/ex001/index.html">ex001</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex002/index.html">ex002</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex003/index.html">ex003</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex004/index.html">ex004</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex005/index.html">ex005</a>
-                <li><del>ex006</del>
-                <li><a rel="next" href="modulo-1/exercicios/ex007/index.html">ex007</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex008/index.html">ex008</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex008b/index.html">ex008b</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex009/index.html">ex009</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex010/index.html">ex010</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex011/index.html">ex011</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex012/index.html">ex012</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex013/index.html">ex013</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex014/index.html">ex014</a>
-                <li><a rel="next" href="modulo-1/exercicios/ex015/index.html">ex015</a>
-                <li><a rel="next" href="modulo-2/exercicios/ex016/index.html">ex016</a>
-                <li><a rel="next" href="modulo-2/exercicios/ex017/fonte01.html">ex017</a>
-                <li><a rel="next" href="modulo-2/exercicios/ex018/fonte01.html">ex018</a>
-                <li><a rel="next" href="modulo2/exercicios/ex019/seletor01.html">ex019</a>
-                <li><a rel="next" href="modulo-2/exercicios/ex020/index.html">ex020</a>
-                <li><a rel="next" href="modulo-2/exercicios/ex021/index.html">ex021</a> 
-            </ul>
+        <section id="modulo-1">
+            <h1>Modulo 1</h1>
+            <section class="exercicios">
+                <h2>Exercícios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-1/exercicios/ex001/index.html">ex001</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex002/index.html">ex002</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex003/index.html">ex003</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex004/index.html">ex004</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex005/index.html">ex005</a></li>
+                    <li><del>ex006</del></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex007/index.html">ex007</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex008/index.html">ex008</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex008b/index.html">ex008b</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex009/index.html">ex009</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex010/index.html">ex010</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex011/index.html">ex011</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex012/index.html">ex012</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex013/index.html">ex013</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex014/index.html">ex014</a></li>
+                    <li><a href="modulos/modulo-1/exercicios/ex015/index.html">ex015</a></li>
+                </ul>
+            </section>
+            <section class="desafios">
+                <h2>Desafios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-1/desafios/d001/index.html">d001</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d002/index.html">d002</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d003/index.html">d003</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d004/index.html">d004</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d005/index.html">d005</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d006/index.html">d006</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d007/index.html">d007</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d008/index.html">d008</a></li>
+                    <li><a href="modulos/modulo-1/desafios/d009/index.html">d009</a></li>
+                </ul>
+            </section>
         </section>
-        <section id="desafios">
-            <h2>Desafios</h2>
-            <ul>
-                <li><a rel="next" href="modulo-1/desafios/d001/index.html">d001</a>
-                <li><a rel="next" href="modulo-1/desafios/d002/index.html">d002</a>
-                <li><a rel="next" href="modulo-1/desafios/d003/index.html">d003</a>
-                <li><a rel="next" href="modulo-1/desafios/d004/index.html">d004</a>
-                <li><a rel="next" href="modulo-1/desafios/d005/index.html">d005</a>
-                <li><a rel="next" href="modulo-1/desafios/d006/index.html">d006</a>
-                <li><a rel="next" href="modulo-1/desafios/d007/index.html">d007</a>
-                <li><a rel="next" href="modulo-1/desafios/d008/index.html">d008</a>
-                <li><a rel="next" href="modulo-1/desafios/d009/index.html">d009</a>
-                <li><a rel="next" href="modulo-2/desafios/d010/index.html">d010</a>
-                <li><a rel="next" href="modulo-2/desafios/d011/#">d011</a>
-                <li><a rel="next" href="modulo-2/desafios/d012/index.html">d012</a>
-                
-            </ul>
+        <section id="modulo-2">
+            <h1>Modulo 2</h1>
+            <section class="exercicios">
+                <h2>Exercícios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-2/exercicios/ex016/index.html">ex016</a></li>
+                    <li><a href="modulos/modulo-2/exercicios/ex017/">ex017</a></li>
+                    <li><a href="modulos/modulo-2/exercicios/ex018/">ex018</a></li>
+                    <li><a href="modulos/modulo-2/exercicios/ex019/seletor01.html">ex019</a></li>
+                    <li><a href="modulos/modulo-2/exercicios/ex020/index.html">ex020</a></li>
+                    <li><a href="modulos/modulo-2/exercicios/ex021/index.html">ex021</a></li>
+                </ul>
+            </section>
+            <section class="desafios">
+                <h2>Desafios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-2/desafios/d010/index.html">d10</a></li>
+                    <li><a href="modulos/modulo-2/desafios/d011/index.html">d11</a></li>
+                    <li><a href="modulos/modulo-2/desafios/d012/index.html">d12</a></li>
+                </ul>
+            </section>
+        </section>
+        <section id="modulo-3">
+            <h1>Modulo 3</h1>
+            <section class="exercicios">
+                <h2>Exercícios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-3/exercicios/ex022/">ex022</a></li>
+                    <li><a href="modulos/modulo-3/exercicios/ex023/">ex023</a></li>
+                </ul>
+            </section>
+            <section class="desafios">
+                <h2>Desafios</h2>
+                <ul>
+                    <li><a href="modulos/modulo-3/desafios/d013/index.html">d013</a></li>
+                </ul>
+        
+            </section>
+        </section>
+        <section id="modulo-4">
+            <h1>Modulo 4</h1>
+            <section class="exercicios">
+                <h2>Exercícios</h2>
+                <ul>
+                    <li>Nothing to see here yet</li>
+                </ul>
+            </section>
+            <section class="desafios">
+                <h2>Desafios</h2>
+                <ul>
+                    <li>Nothing to see here yet</li>
+                </ul>
+        
+            </section>
+        </section>
+        <section id="modulo-5">
+            <h1>Modulo 5</h1>
+            <section class="exercicios">
+                <h2>Exercícios</h2>
+                <ul>
+                    <li>Nothing to see here yet</li>
+                </ul>
+            </section>
+            <section class="desafios">
+                <h2>Desafios</h2>
+                <ul>
+                    <li>Nothing to see here yet</li>
+                </ul>
+        
+            </section>
         </section>
     </main>
-    <footer>
-        <p>Site desenvolvido por Niibler. </p>
 
-        <p>
-            <pre>
-                <a rel="external" target="_blank" href="https://twitter.com/niibler99">Twitter</a>
-                <a rel="external" target="_blank" href="https://twitter.com/niibler">Github</a>
-            </pre>
-        </p>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/niibler" rel="external" target="_blank">Niibler</a>.</p>
     </footer>
 </body>
 </html>
