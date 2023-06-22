@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iFrame</title>
+    <style>
+        iframe {
+            border: 1px solid black;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+
+        <!--Tamanho padrão iframe: 300x150 px-->
+        <iframe src="https://cursoemvideo.com" frameborder="0" scrolling="yes"> 
+            <!--iframe = frame inline/quadro em linha
+                scrolling = yes, no e auto; 
+                no: não permite scrollar mesmo que tenha mais conteúdo para se ver. 
+
+            -->
+
+        </iframe>
+        para ver cursos.  
+    </p>
+    <br>
+    <p>
+        Acessando o meu Projeto cordel
+        <iframe src="https://niibler.github.io/projeto-cordel/" frameborder="0">
+            em <a href="https://niibler.github.io/projeto-cordel/"></a> <!--Tudo que estiver dentro da tag iframe será uma mensagem para navegadores que não tiverem compatibilidade com o mesmo.-->
+        </iframe>
+    </p>
+</body>
+</html>
