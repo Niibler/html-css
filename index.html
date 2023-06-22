@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
         * {
             margin: 0px;
         }   
         
+        /*Coisas a se melhorar: 
+            > Entender melhor sobre positions e outros métodos para  posicionamento de div's.
+            > depois que entender isso, arrumar toda cagada feita nesta pagina. 
+        */
         :root {
             --bg-color: #070516;
             --cor01: #250933;
@@ -16,6 +23,8 @@
             --cor03: #091A33;
             --cor04: #090F33; 
             --cor-destaque: rgb(35, 61, 90);
+
+            --font-main: 'Roboto', sans-serif;
         }
 
         body {
@@ -31,7 +40,9 @@
         }
 
         header > h1 { 
-            font-size: 3em;
+            font-family: var(--font-main);
+            font-size: 4em;
+            font-weight: 900;
             padding: 40px;
         }       
         
@@ -81,9 +92,20 @@
         }
 
         #modulo-3 {
-            margin-left: 20px;
+            margin-left: 200px; 
+            position: absolute;
         }
         
+        #modulo-4 {
+            margin-left: 380px;
+            position: absolute; 
+        }
+
+        #modulo-5 {
+            margin-left: 650px; 
+            position: absolute;
+        }
+
         .exercicios {
             padding: 10px;
         }
@@ -98,8 +120,6 @@
             margin-top: 20px;
             text-align: center;
         }
-
-
     </style>
 </head>
 <body>
