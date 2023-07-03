@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario simples</title>
+    <title>Document</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         div {
-            margin-bottom: 1em;
+            line-height: 1.5em;
         }
 
-        .buttons {
-            margin-top: 1em;
-            text-align: center;
+        fieldset {
+            margin-bottom: 20px;
         }
-
     </style>
 </head>
 <body>
-    <h1>Cadastramento</h1>
-    <form action="cadastro.php" method="get">
+    <form action="inscricao.php" method="post">
         <fieldset>
-            <legend>Informações pessoais</legend>
+            <legend>Dados pessoais</legend>
             <div>
-                <label for="name">Nome*: </label>
-                <input type="text" name="name" id="name" required>
+                <label for="prinome">Nome: </label>
+                <input type="text" name="prinome" id="prinome" autocomplete="given-name">
             </div>
             <div>
-                <label for="email">Email*: </label>
-                <input type="email" name="email" id="email" required>
+                <label for="ultnome">Sobrenome: </label>
+                <input type="text" name="ultnome" id="ultnome" autocomplete="family-name">
             </div>
             <div>
-                <label for="tel">Telefone*: </label>
-                <input type="tel" name="tel" id="tel" required>
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade" min="1" max="120">
             </div>
             <div>
-                <label for="endereco">Endereço*: </label>
-                <input type="text" name="endereco" id="endereco" required>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" autocomplete="email">
             </div>
-
             <div>
-                <legend>Sexo*</legend>
-                <input type="radio" name="gender" id="homem" value="M" required><label for="homem">Homem</label> <br>
-                <input type="radio" name="gender" id="mulher" value="M" required><label for="mulher">Mulher</label>
+                <label for="telefone">Celular: </label>
+                <input type="tel" name="telefone" id="telefone" autocomplete="tel">
             </div>
         </fieldset>
 
         <fieldset>
-            <legend>Questões aleatórias</legend>
-            <legend>Qual(is) você prefere?</legend>
-            <div>
-                <input type="checkbox" name="pc" id="pc"><label for="pc">PC</label> <br>
-                <input type="checkbox" name="xbox" id="xbox"><label for="xbox">XBOX</label> <br>
-                <input type="checkbox" name="plays" id="plays"><label for="plays">PlayStation</label>
-            </div>
+            <legend>Sei la</legend>
+            <label for="hobby">Quais seus hobbies? </label>
+            <input type="text" name="hobby" id="hobby">
         </fieldset>
-        <div class="buttons">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </div>
     </form>
 </body>
 </html>
