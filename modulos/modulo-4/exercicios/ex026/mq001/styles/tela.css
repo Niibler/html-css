@@ -1,0 +1,36 @@
+@charset "UTF-8"; 
+
+/* Estilo para telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background: gray;
+    padding: 30px;
+    text-align: center;
+}
+
+header > h1 {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: auto;
+}
+
+nav > a {
+    color: rgb(3, 53, 146);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav > a:hover {
+    color: rgb(18, 92, 161);
+}
