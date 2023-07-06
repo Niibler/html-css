@@ -2,6 +2,35 @@
 
 /* Todas as demais mídias */
 
-@media print {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* PC */
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    img#phone { display: none; }
+    img#pc {display: block; }
+}
+
+@media screen and (min-width: 1200px) { /* TV, Monitor grande, etc. */
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
     
+    img#phone {display: none; }
+    img#tv {display: block;}
+}
+
+@media print {
+    body {
+        background-image: url('../images/icon-print.png');
+    }
 }
