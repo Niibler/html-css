@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <span id="menu-burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="nav">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -38,5 +40,15 @@
         </article>
     </main>
 
+    <script>
+        function clickMenu() {
+            if (nav.style.display == 'block') {
+                nav.style.display = 'none'
+            }
+            else {
+                nav.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
