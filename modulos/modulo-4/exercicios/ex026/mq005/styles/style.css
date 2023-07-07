@@ -28,10 +28,6 @@ span#menu-burguer {
     cursor: pointer;
 }
 
-span#menu-burguer:hover {
-
-}
-
 nav {
     display: none;
 }
